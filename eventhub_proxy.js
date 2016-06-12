@@ -1,6 +1,6 @@
 var https = require('https');
 var crypto = require('crypto');
-var moment = require('moment');
+var moment = require('./moment');
 
 // Event Hubs parameters
 var namespace = 'thingsee';
