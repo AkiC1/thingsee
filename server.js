@@ -1,6 +1,6 @@
 var http = require('http')
 var port = process.env.PORT || 1337;
-var EventHub = require('./eventhub_proxy');
+var EventHub = require('eventhub_proxy');
 var app = new EventHub();
 
 http.createServer(function(req, res) {
