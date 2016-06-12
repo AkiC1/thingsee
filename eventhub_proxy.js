@@ -17,7 +17,8 @@ var key_name = 'Data';
 var key = 'ZFe88zqovbai6x3GkbF1pWOe8MUoAgGK+JLg754t9As=';
 
 // Full Event Hub publisher URI
-var uri = 'https://' + namespace + '.servicebus.windows.net' + '/' + hubname + '/publishers/' + devicename + '/messages';
+//var uri = 'https://' + namespace + '.servicebus.windows.net' + '/' + hubname + '/publishers/' + devicename + '/messages';
+var uri = 'https://' + namespace + '.servicebus.windows.net' + '/' + hubname + '/publishers/messages';
 
 // Create a SAS token
 // See http://msdn.microsoft.com/library/azure/dn170477.aspx
