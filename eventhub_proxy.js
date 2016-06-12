@@ -1,6 +1,6 @@
 var https = require('https');
 var crypto = require('crypto');
-var moment = require('./moment');
+var moment = require('moment');
 
 // Event Hubs parameters
 var namespace = 'thingsee';
@@ -36,7 +36,7 @@ function create_sas_token(uri, key_name, key)
     return token;
 }
 
-var my_sas = create_sas_token(my_uri, my_key_name, my_key)
+var my_sas = create_sas_token(uri, key_name, key)
 
 console.log(my_sas);
 
