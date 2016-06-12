@@ -3,19 +3,21 @@ var crypto = require('crypto');
 var moment = require('moment');
 
 // Event Hubs parameters
-var namespace = 'tomhub-ns';
-var hubname ='tomtest001';
+var namespace = 'thingsee';
+var hubname ='akinodee_hsend';
 var devicename = 'device-01';
+
+//https://thingsee.servicebus.windows.net/akinodee_hsend
 
 // Payload to send
 var payload = '{\"Temperature\":\"37.0\",\"Humidity\":\"0.4\"}';
 
 // Shared access key (from Event Hub configuration)
-var my_key_name = 'send';
-var my_key = 'key';
+var key_name = 'Data';
+var key = 'ZFe88zqovbai6x3GkbF1pWOe8MUoAgGK+JLg754t9As=';
 
 // Full Event Hub publisher URI
-var my_uri = 'https://' + namespace + '.servicebus.windows.net' + '/' + hubname + '/publishers/' + devicename + '/messages';
+var uri = 'https://' + namespace + '.servicebus.windows.net' + '/' + hubname + '/publishers/' + devicename + '/messages';
 
 // Create a SAS token
 // See http://msdn.microsoft.com/library/azure/dn170477.aspx
