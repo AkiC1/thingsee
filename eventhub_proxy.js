@@ -46,7 +46,7 @@ console.log(my_sas);
 var options = {
   hostname: namespace + '.servicebus.windows.net',
   port: 443,
-  path: '/' + hubname + '/publishers/' + devicename + '/messages',
+  path: '/' + hubname + '/publishers/messages',
   method: 'POST',
   headers: {
     'Authorization': my_sas,
