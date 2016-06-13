@@ -7,7 +7,6 @@ var namespace = 'namespace';
 var hubname ='name';
 var devicename = 'device-01';
 
-//https://thingsee.servicebus.windows.net/akinodee_hsend
 
 // Payload to send
 var payload = '{\"Temperature\":\"37.0\",\"Humidity\":\"0.4\"}';
