@@ -3,8 +3,8 @@ var crypto = require('crypto');
 var moment = require('moment');
 
 // Event Hubs parameters
-var namespace = 'thingsee';
-var hubname ='akinodee_hsend';
+var namespace = 'namespace';
+var hubname ='name';
 var devicename = 'device-01';
 
 //https://thingsee.servicebus.windows.net/akinodee_hsend
@@ -13,8 +13,8 @@ var devicename = 'device-01';
 var payload = '{\"Temperature\":\"37.0\",\"Humidity\":\"0.4\"}';
 
 // Shared access key (from Event Hub configuration)
-var key_name = 'Data';
-var key = 'ZFe88zqovbai6x3GkbF1pWOe8MUoAgGK+JLg754t9As=';
+var key_name = 'xxxx';
+var key = '*******************';
 
 // Full Event Hub publisher URI
 //var uri = 'https://' + namespace + '.servicebus.windows.net' + '/' + hubname + '/publishers/' + devicename + '/messages';
